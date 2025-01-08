@@ -19,13 +19,13 @@ Ce projet vise à prédire le volume de trafic routier en utilisant des techniqu
 ### 1. **Courbes d'apprentissage pour le modèle CNN+LSTM**
 Les courbes montrent la perte (MSE) pendant l'entraînement et la validation pour le modèle CNN+LSTM. La perte d'entraînement reste stable et basse, mais la perte de validation fluctue légèrement, indiquant des variations possibles dans la capacité à généraliser.
 
-![Courbes d'apprentissage](C:/Users/ibrahim/Pictures/Trafic-main/scripts/lstm.png)
+![Courbes d'apprentissage](images/lstm.png)
 
 ### 2. Courbes d'apprentissage pour le Transformer
 
 Les courbes ci-dessous montrent que le modèle Transformer converge rapidement, avec une perte d'entraînement et de validation qui restent stables après quelques époques.
 
-![Courbes d'apprentissage pour le Transformer](C:/Users/ibrahim/Pictures/Trafic-main/scripts/trans.png)
+![Courbes d'apprentissage pour le Transformer](images/trans.png)
 
 Ce comportement reflète la robustesse de l'architecture Transformer pour les tâches de prévision temporelle.
 
@@ -34,7 +34,7 @@ Ce comportement reflète la robustesse de l'architecture Transformer pour les t�
 Ce graphique compare les pertes (MSE) de validation des modèles CNN+LSTM et Transformer au fil des époques d'entraînement.
 On observe que le modèle Transformer converge vers une perte plus basse que le modèle CNN+LSTM, indiquant une meilleure capacité à généraliser sur les données de validation.
 
-![Comparaison](C:/Users/ibrahim/Pictures/Trafic-main/scripts/pred.png)
+![Comparaison](images/pred.png)
 
 ### 4. **Comparaison des prédictions entre CNN+LSTM et Transformer**
 Ce graphique compare les prédictions des deux modèles (CNN+LSTM et Transformer) sur un échantillon de 50 données. 
@@ -42,7 +42,7 @@ La ligne bleue représente les valeurs réelles, tandis que les lignes orange et
 Ce type de visualisation permet de déterminer quel modèle offre des prédictions plus proches des tendances réelles.
 
 
-![Comparaison des prédictions](C:/Users/ibrahim/Pictures/Trafic-main/scripts/comp.png)
+![Comparaison des prédictions](images/comp.png)
 
 - **En bleu** : Valeurs réelles
 - **En orange** : Prédictions du modèle CNN+LSTM
