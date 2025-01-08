@@ -69,3 +69,24 @@ Ce type de visualisation permet de déterminer quel modèle offre des prédictio
 | **Transformer**  | 0.0334           | 0.1292            | 0.4601  |
 
 ---
+
+---
+
+Les résultats ci-dessus comparent les performances des modèles **CNN+LSTM** et **Transformer** sur les données de validation. 
+
+### Interprétation des résultats
+- **MSE (Mean Squared Error)** : Mesure l'erreur moyenne quadratique entre les prédictions et les valeurs réelles. Une valeur plus faible indique une meilleure performance.
+- **MAE (Mean Absolute Error)** : Évalue l'erreur absolue moyenne entre les prédictions et les valeurs réelles. Cela offre une mesure intuitive de la précision.
+- **R² (Coefficient de détermination)** : Indique dans quelle mesure le modèle explique la variance des données. Une valeur proche de 1 reflète une bonne capacité prédictive.
+
+### Analyse des modèles :
+1. **Transformer** :
+   - Ce modèle a une perte (MSE) plus faible, une erreur absolue moyenne (MAE) plus basse et un coefficient de détermination **R²** supérieur à celui du CNN+LSTM.
+   - Avec un **R² de 0.4601**, il explique mieux la variance des données de validation.
+
+2. **CNN+LSTM** :
+   - Ce modèle a un **R² négatif (-0.0004)**, ce qui indique qu’il peine à généraliser sur les données de validation, et ses valeurs de MSE et MAE sont également plus élevées.
+
+Ces résultats montrent que l'architecture **Transformer** est mieux adaptée pour prédire les séries temporelles dans ce projet, grâce à sa capacité à capturer efficacement les relations complexes dans les données.
+
+---
