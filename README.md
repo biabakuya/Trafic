@@ -1,4 +1,4 @@
-# Trafic
+# Analyse et Modélisation du Trafic Routier à l'Aide d'Architectures CNN+LSTM et Transformer
 
 Ce projet vise à prédire le volume de trafic routier en utilisant des techniques avancées de deep learning, telles que les architectures CNN+LSTM et Transformer, appliquées à des données temporelles.
 
